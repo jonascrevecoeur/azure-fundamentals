@@ -1,0 +1,20 @@
+{
+  "scriptFile": "move_file_from_raw_to_clean.py",
+  "bindings": [
+    {
+      "name": "inputblob",
+      "type": "blobTrigger",
+      "direction": "in",
+      "path": "raw/{name}",
+      "connection": "blob_storage_connection"
+    },
+    {
+      "name": "outputblob",
+      "type": "blob",
+      "dataType": "binary",
+      "path": "clean/{name}",
+      "connection": "blob_storage_connection",
+      "direction": "out"
+    }
+  ]
+}
