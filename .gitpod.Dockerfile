@@ -14,7 +14,7 @@ RUN apt-get install -y wget git tree ssh nano sudo nmap man tmux curl
 RUN curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 
 # install requirements for Azure functions
-RUN apt-get install azure-functions-core-tools-4
+RUN npm install -g azure-functions-core-tools
 
 RUN apt-get clean 
 
